@@ -191,7 +191,7 @@
 .pdf7 {
     grid-column: 1 / span 2;
     padding: 10px;
-    height: 20em;
+    height: 30em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,6 +199,141 @@
     .pdf7 iframe {
         width: 60%;
         height: 100%;
+    }
+
+.video4 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+    .video4 iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+        .video4 p {
+            text-align: center;
+            margin: 1em;
+        }
+
+.pdf8 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30em;
+}
+    .pdf8 iframe {
+        width: 60%;
+        height: 100%;
+    }
+
+.section6 h3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.section7 h3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.video5 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-column: 2 / 3;
+    justify-content: center;
+}
+    .video5 iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+        .video5 p,
+        .link3 p {
+            text-align: center;
+            margin: 1em;
+        }
+
+.video6 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-row: 2 / span 2;
+    height: 50em;
+}
+    .video6 iframe {
+        aspect-ratio: 9 / 16;
+        width: 100%;
+        height: 100%;
+    }
+        .video6 p {
+            text-align: center;
+            margin: 1em;
+        }
+
+.link3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+    .link3 iframe {
+        height: 24em;
+    }
+
+.pdf9 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30em;
+}
+    .pdf9 iframe {
+        width: 60%;
+        height: 100%;
+    }
+
+.section8 h3 {
+    text-align: center;
+}    
+.section8 h3,
+.pdf10,
+.pdf11 {
+    grid-column: 1 / span 2;
+}
+
+.pdf10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: 40em;
+}
+    .pdf10 iframe,
+    .pdf11 iframe {
+        width: 60%;
+        height: 100%;
+    }
+        .pdf10 p {
+            width: 60%;
+            text-align: center;
+            margin: 1em;
+        }
+
+.pdf11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    height: 30em;
+}
+
+.footer {
+    grid-column: 1 / span 2;
+    margin: 2em;
+}
+    .footer a {
+        margin: auto;
     }
 
 @media screen and (max-width: 750px){
