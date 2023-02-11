@@ -9,8 +9,8 @@
 .conteiner {
     max-width: 1000px;
     min-width: 350px;
-    display: grid;
-    grid-template-columns: 50% auto;
+    display: flex;
+    flex-direction: column;
     /* margin: 10px; */
     justify-content: center;
     background-color: #29FFD5;
