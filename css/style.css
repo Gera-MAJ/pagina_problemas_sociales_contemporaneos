@@ -39,6 +39,10 @@
 .section2,
 .section3,
 .section4,
+.section5,
+.section6,
+.section7,
+.section8,
 .footer {
     display: grid;
     grid-template-columns: 50% auto;
@@ -98,7 +102,7 @@
     flex-direction: column;
     padding: 10px;
     align-items: center;
-    height: 20em;
+    height: 40em;
     grid-column: 1 / span 2;
 }
     .pdf3 iframe {
@@ -109,6 +113,93 @@
             width: 60%;
             margin: 1em;
         }
+
+.pdf4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / span 2;
+    height: 30em;
+}
+    .pdf4 iframe {
+        width: 60%;
+        height: 100%;
+    }
+
+.pdf5 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 40em;
+    grid-column: 1 / span 2;
+}
+    .pdf5 iframe {
+        width: 60%;
+        height: 100%;
+    }
+        .pdf5 p {
+            width: 60%;
+            text-align: center;
+            margin: 1em;
+        }
+
+.pdf6 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 30em;
+    grid-column: 1 / span 2;
+}
+    .pdf6 iframe {
+        width: 60%;
+        height: 100%;
+    }
+
+.section5 h3 {
+        grid-column: 1 / span 2;
+        text-align: center;
+}
+    
+.link2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 24.3em;
+}
+    .link2 iframe {
+        width: 100%;
+        height: 100%;
+    }
+        .link2 p,
+        .video2 p {
+            text-align: center;
+            margin: 10px;
+        }
+
+.video2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+    .video2 iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+.pdf7 {
+    grid-column: 1 / span 2;
+    padding: 10px;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+    .pdf7 iframe {
+        width: 60%;
+        height: 100%;
+    }
 
 @media screen and (max-width: 750px){
     
