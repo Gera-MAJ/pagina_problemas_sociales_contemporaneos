@@ -26,300 +26,39 @@
         border: 2px solid black;
         background-color: aquamarine;
     } */
-
-
-.banner,
 .titulo1,
+.title {
+    padding: 10px;
+}
+
 .titulo2,
 .titulo3,
 .titulo4,
 .footer {
-    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 50% auto;
     /* text-align: center; */
 }
 
-.titulo2,
-.titulo3,
-.titulo4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+.video1 {
+    padding: 10px;
 }
-
-.banner {
-   min-width: 350px;
-}
-    .banner img {
+    .video1 iframe {
+        aspect-ratio: 16 / 9;
         width: 100%;
+    }
+
+.pdf1 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+    .pdf1 iframe {
         height: 100%;
     }
 
-.titulo1,
-.titulo2,
-.titulo3,
-.titulo4,
-.footer {
-    margin: 30px 10px 0px 10px;
-    text-align: center;
-}
-.titulo1 h2,
-.titulo2 h2,
-.titulo3 h2,
-.titulo4 h2 {
-    font-size: 2.1em;
-}
-
-.pdf1 {
-    padding: 10px;
-    border-right: 2px solid black;
-    margin-right: 10px;
-}
-    .pdf1 iframe {
-        width: 100%;
-        height: 21rem;
-    }
-
-.video1 {
-    padding: 10px;
-    /* para centrarlo horizontalmente es necesario que le ponga el display flex al padre y luego aplicar align items */
-    display: flex;
-    align-items: center;
-    border-left: 2px solid black;
-    margin-left: 10px;
-}
-    .video1 iframe {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-    }
-
-    .video1,
-    .pdf1 {
-        border-bottom: 2px solid black;
-    }
-.pdf2 {
-    padding: 10px;
-    
-}
-    .pdf2 iframe {
-        width: 100%;
-        height: 21rem;
-    }
-        .pdf2,
-        .link1,
-        .link2,
-        .pdf3 {
-            border-bottom: 2px solid black;
-        }
-            .pdf2 {
-                border-left: 2px solid black;
-                margin-left: 10px;
-            }
-                .link1,
-                .link2 {
-                    border-right: 2px solid black;
-                    margin-right: 10px;
-                }
-
-.link1,
-.link2,
-.link3,
-.link4,
-.link5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}    
-    .link1 img,
-    .link2 img,
-    .link3 img,
-    .link4 img,
-    .link5 img {
-        width: 9rem;
-    }
-        .link1 a,
-        .link2 a,
-        .link3 a,
-        .link4 a,
-        .link5 a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-.pdf3 {
-    padding: 10px;
-    margin-left: 10px;
-    border-left: 2px solid black;
-}
-    .pdf3 iframe {
-        width: 100%;
-        height: 21rem;
-    }
-
-    .link1,
-    .link2,
-    .link3,
-    .link4,
-    .link5 {
-        flex-direction: column;   
-    }
-        .link1 a,
-        .link2 a,
-        .link3 a,
-        .link4 a,
-        .link5 a {
-            text-decoration: none;
-            color: black;
-            transition: transform 300ms;
-        }
-            .link3,
-            .link4,
-            .link5 {
-                margin: 10px;
-            }
-                .link1 a:hover,
-                .link2 a:hover,
-                .link3 a:hover,
-                .link4 a:hover,
-                .link5 a:hover {
-                    transform: scale(1.1);
-                }
-.link3 {   
-    border-left: 2px solid black;
-    margin: 0px 10px;
-}
-    .link3 h3,
-    .link4 h3 {
-        width: 20em;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-.link4 {
-    border-right: 2px solid black;
-    margin: 0px 10px;
-}
-
-.link5 {
-    grid-column: 1 / 3;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding-bottom: 10px;
-    margin-top: 0px;
-}
-    .link5 h3,
-    .link1 h3,
-    .link2 h3 {
-        text-align: center;
-        width: 20em;
-    }
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    border: 2px solid black;
-}
-    .footer a {
-        color: cornflowerblue;
-    }
-
-.titulo1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 10px 0px 10px;
-    height: 3rem;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-    .titulo1 h2 {
-        font-size: 1.7em;
-    }
-
-.titulo2 {
-    margin-top: 30px;
-}
 @media screen and (max-width: 750px){
     
-    .video1,
-    .pdf1,
-    .pdf2,
-    .pdf3,
-    .link1,
-    .link2,
-    .link3,
-    .link4,
-    .link5 {
-        grid-column: 1 / span 2;
-    }   
-    .pdf1 iframe {
-        height: 21rem;
-    }
-    .titulo1 h2 {
-        font-size: 1.1rem;
-        padding: 5px;
-    }
-    .titulo2 h2,
-    .titulo3 h2,
-    .titulo4 h2 {
-        font-size: 1.3rem;
-    }
-    .video1 {
-        border-bottom: none;
-        border-right: 2px solid black;
-        margin-right: 10px;
-    }
-    .pdf1 {
-        border-left: 2px solid black;
-        margin-left: 10px;
-    }
-    .pdf2,
-    .pdf3 {
-        border-bottom: none;
-        border-right: 2px solid black;
-        margin-right: 10px;
-    }
-    .link1,
-    .link2 {
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        margin-left: 10px;
-        padding-bottom: 20px;
-    }
-        /* .link1 a:hover,
-        .link2 a:hover,
-        .link3 a:hover,
-        .link4 a:hover,
-        .link5 a:hover {
-            transform: none;
-        } */
-    
-    .link3 {
-        border-right: 2px solid black;
-        padding-bottom: 10px;
-    }
-    .link4 {
-        border-left: 2px solid black;
-        padding-bottom: 10px;
-    }
-    .link5 {
-        padding-bottom: 20px;
-    }
-
-    .link1 h3,
-    .link2 h3,
-    .link3 h3,
-    .link4 h3,
-    .link5 h3 {
-        width: 16em;
-    }
+   
 }
