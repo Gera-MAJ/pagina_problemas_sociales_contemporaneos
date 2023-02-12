@@ -339,6 +339,43 @@
     }
 
 @media screen and (max-width: 750px){
-    
-   
+    .video1,
+    .pdf1,
+    .link2,
+    .video2,
+    .video4,
+    .video5,
+    .video6,
+    .link3{
+        grid-column: 1 / span 2;
+    }
+    .pdf1 {
+        height: 18em;
+    }
+    .pdf2,
+    .pdf4,
+    .pdf6,
+    .pdf7,
+    .pdf8,
+    .pdf9,
+    .pdf11  {
+        height: 16em;
+    }
+    .pdf3,
+    .pdf5,
+    .pdf10 {
+        height: 25em;
+        
+    }
+        .pdf3 iframe,
+        .pdf5 iframe {
+            width: 100%;
+        }
+    .video6 {
+        height: 40em;
+    }
+    .pdf10 iframe,
+    .pdf10 p {
+        width: 100%;
+    }
 }
